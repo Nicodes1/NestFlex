@@ -1,0 +1,1 @@
+Remember to update the global.css pathing because it won't be in the folder with any html files
