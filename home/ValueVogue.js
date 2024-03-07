@@ -1,1 +1,0 @@
-// don't tell me that you model if you ain't been in Vogue
