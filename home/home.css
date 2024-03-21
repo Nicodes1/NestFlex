@@ -19,7 +19,7 @@ body {
   height: 25px;
   border: 50px;
   border-radius: 50px;
-  background-color: orange; /* Change this to the desired color */
+  background-color:rgba(255, 152, 84, 0.445); /* Change this to the desired color */
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -29,12 +29,12 @@ body {
   border-radius: 20px;
   border: none;
   outline: none;
-  background-color: orange; /* Change this to the desired color */
+  background-color: rgb(255, 102, 0); /* Change this to the desired color */
   color: white;
   font-size: 16px;
   cursor: pointer;
 }
 
 .search-button:hover {
-  background-color: darkorange; /* Change this to the desired hover color */
+  background-color: rgb(212, 85, 0); /* Change this to the desired hover color */
 }
