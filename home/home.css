@@ -5,6 +5,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+.logo2 {
+  width: 175px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  top: 10px; /* Adjust the distance from the top */
+  left: 50px; /* Adjust the distance from the left */
+}
+
 .navBar{
   position: fixed;
   top: 0;
@@ -20,6 +27,8 @@ body {
   border: none;
   outline: none;
   color: red;
+  top: 10px; /* Adjust the distance from the top */
+  right: 50px; /* Adjust the distance from the left */
 }
 .sellButton{
   background-color: white;
@@ -27,6 +36,7 @@ body {
   outline: none;
   color: red;
 }
+
 .helpButton{
   background-color: white;
   border: none;
