@@ -24,7 +24,7 @@ body {
   .buyButton{
     font-size: 20px;
     font-weight: bold;
-    background-color: rgba(255, 171, 115, 0.323);
+    background-color: white;
     color: rgb(255, 81, 0); /* Change to desired color */
     border: none;
     outline: none;
@@ -50,7 +50,7 @@ body {
   .helpButton{
     font-size: 20px;
     font-weight: bold;
-    background-color: white;
+    background-color: rgba(255, 171, 115, 0.323);
     color: rgb(255, 81, 0); /* Change to desired color */
     border: none;
     outline: none;

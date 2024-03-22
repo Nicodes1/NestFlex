@@ -24,7 +24,7 @@ body {
   .buyButton{
     font-size: 20px;
     font-weight: bold;
-    background-color: rgba(255, 171, 115, 0.323);
+    background-color: white;
     color: rgb(255, 81, 0); /* Change to desired color */
     border: none;
     outline: none;
@@ -37,7 +37,7 @@ body {
   .sellButton{
     font-size: 20px;
     font-weight: bold;
-    background-color: white;
+    background-color:white;
     color: rgb(255, 81, 0); /* Change to desired color */
     border: none;
     outline: none;
@@ -64,6 +64,7 @@ body {
     width:50px;
     height: auto;
     position: fixed;
+    background-color: rgba(255, 171, 115, 0.323);
     top: 32px; 
     right: 50px;
     padding: 5px 5px; 
