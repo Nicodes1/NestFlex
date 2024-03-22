@@ -101,12 +101,30 @@ html, body {
   cursor: pointer;
   margin: 10px;
 }
+.filter-button{
+  flex: 2;
+  display: flex;
+  position:fixed;
+  top: 110px;
+  margin-bottom: 10px;
+  left: 20px; /* Add left padding */
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  left: 600px;
+  background-color: rgb(255, 102, 0); /* Change this to the desired color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
 
   .sellButton a, .buyButton a, .helpButton a, .search-button a {
     color: inherit; /* Inherit color from parent element (orange) */
     text-decoration: none; /* Remove underline from the link */
   }
-  .search-button:hover {
+  .search-button:hover, .filter-button:hover {
     background-color: rgb(212, 85, 0); /* Change this to the desired hover color */
   }
   .profile:hover {
