@@ -70,11 +70,6 @@ body {
   border-radius: 100px; 
 }
 
-.sellButton a, .buyButton a, .helpButton a {
-  color: inherit; /* Inherit color from parent element (orange) */
-  text-decoration: none; /* Remove underline from the link */
-}
-
 .search-container {
   display: flex;
   justify-content: center;
@@ -102,6 +97,10 @@ body {
   color: white;
   font-size: 16px;
   cursor: pointer;
+}
+.sellButton a, .buyButton a, .helpButton a, .search-button a {
+  color: inherit; /* Inherit color from parent element (orange) */
+  text-decoration: none; /* Remove underline from the link */
 }
 
 .search-button:hover {

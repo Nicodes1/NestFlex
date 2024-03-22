@@ -1,10 +1,11 @@
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure that the body takes up the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
   .logo2 {
     width: 175px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
@@ -13,13 +14,13 @@ body {
   }
   
   .navBar{
+    flex:1 ;
     position: fixed;
-    top: 0;
     width: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
-    border-bottom: 20ch;
-    border-radius: 20px;
+    margin-bottom: 100px; 
+    border-bottom: 2px solid black;
   }
   .buyButton{
     font-size: 20px;
@@ -69,12 +70,45 @@ body {
     padding: 5px 5px; 
     border-radius: 100px; 
   }
-  
-  .sellButton a, .buyButton a, .helpButton a {
+
+.search-container {
+  flex: 2;
+  display: flex;
+  position:fixed;
+  margin-top: 110px;
+  margin-bottom: 10px;
+  left: 20px; /* Add left padding */
+}
+
+.search-bar {
+  padding: 10px;
+  width: 200px;
+  height: 20px;
+  border: 50px;
+  border-radius: 50px;
+  background-color:rgba(255, 171, 115, 0.323); /* Change this to the desired color */
+  font-size: 16px;
+  margin: 10px;
+}
+.search-button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 102, 0); /* Change this to the desired color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+  .sellButton a, .buyButton a, .helpButton a, .search-button a {
     color: inherit; /* Inherit color from parent element (orange) */
     text-decoration: none; /* Remove underline from the link */
   }
-  
+  .search-button:hover {
+    background-color: rgb(212, 85, 0); /* Change this to the desired hover color */
+  }
   .profile:hover {
     width: 50px;
     background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
@@ -83,4 +117,30 @@ body {
   .buyButton:hover, .sellButton:hover, .helpButton:hover {
     background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
   }
-  
+  .mapListingCountainer{
+  display: flex;
+  margin: 5px;
+}
+
+.map, .listings {
+  width: 50%; /* Each element takes 50% of the screen width */
+  height: calc(95vh - 200px); /* Make the map and listings containers take up 90% of the viewport height minus 200px */
+  max-height: calc(95vh - 200px); /* Limit the maximum height of the containers */
+  margin-top: 200px; /* Adjust the top margin as needed */
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%; /* Make the iframe fill its container */
+  outline: 2px solid black;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.listings {
+  background-color: #d8d8d8; /* Background color */
+  border: 2px solid rgb(0, 0, 0); /* Border */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden;
+}

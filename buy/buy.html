@@ -8,18 +8,32 @@
     <link rel="stylesheet" href="buy.css">
 </head>
 <body>
-    <nav class="navBar">
-        <ul>
-          <a href="/home/home.html">
-            <img src="/logo2.png" alt="Clickable PNG" class="logo2">
-          </a>
-          <button class ="buyButton" type="button"><a href="/buy//buy.html">BUY</a></button>
-          <button class="sellButton" type="button"><a href="/sell/sell.html">SELL</a></button>
-          <button class="helpButton" type="button"><a href="/help/help.html">HELP</a></button>
-          <a href="/profile/profile.html">
-            <img src="/profile-icon.png" alt="Clickable-PNG" class="profile">
-          </a>
-        </ul>
-      </nav>
+  <div class="navBar">
+    <ul>
+      <a href="/home/home.html">
+        <img src="/logo2.png" alt="Clickable PNG" class="logo2">
+      </a>
+      <button class ="buyButton" type="button"><a href="/buy//buy.html">BUY</a></button>
+      <button class="sellButton" type="button"><a href="/sell/sell.html">SELL</a></button>
+      <button class="helpButton" type="button"><a href="/help/help.html">HELP</a></button>
+      <a href="/profile/profile.html">
+        <img src="/profile-icon.png" alt="Clickable-PNG" class="profile">
+      </a>
+    </ul>
+  </div>
+  <form id="form">
+    <div class="search-container">
+      <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+      <button type="submit" class="search-button"><a href="/buy/buy.html">Search</a></button>
+    </div>
+  </form>
+  <div class="mapListingCountainer">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265370.0541309442!2d-114.36806565064263!3d51.03081822467538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1711083537814!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="listings">
+      <img src="/profile-logo.png">
+  </div>
+  <script src="buy.js"></script>
 </body>
 </html>
