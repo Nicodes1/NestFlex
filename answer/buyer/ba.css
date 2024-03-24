@@ -159,9 +159,9 @@ ul li a:hover {
   width: 900px;
   top: 120px;
   text-align: left;
-  position: fixed;
+  position: absolute;
   height: max-content;
-  margin-left: 300px;
+  left: 570px;
 }
 
 h1 {
