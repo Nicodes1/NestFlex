@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nestflex Property Listing</title>
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Nestflex Logo" id="logo">
+    <nav>
+        <a href="#">BUY</a>
+        <a href="#">SELL</a>
+        <a href="#">HELP</a>
+    </nav>
+</header>
+<main>
+    <section id="contact-form">
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Contact Email" required>
+            <input type="tel" placeholder="Contact Cell" required>
+            <div class="realtor-info">
+                <p>Realtor Name: John Doe - XYZ Realty</p>
+                <p>403-123-9876</p>
+                <p>JDoe@XYZRealty.ca</p>
+            </div>
+            <textarea placeholder="Message Text"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <section id="listing-details">
+        <div class="price-section">
+            <span class="price">$280,000</span>
+            <span class="deal">Great Deal</span>
+            <button type="button" onclick="contactRealtor()">Contact</button>
+        </div>
+        <div class="property-info">
+            <p class="address">Address, City, Province</p>
+            <div class="property-features">
+                <!-- Property features like SQFT, Bedrooms, Bathrooms here -->
+            </div>
+            <p class="details">Welcome to your dream urban retreat located on the cusp of Bridgeland and Crescent Heights! This brand new one-bedroom, one-bathroom...</p>
+            <div class="quick-facts">
+                <!-- Quick facts like year built, cost/sqft, listing age, features here -->
+            </div>
+        </div>
+    </section>
+</main>
+<script src="contact.js"></script>
+</body>
+</html>

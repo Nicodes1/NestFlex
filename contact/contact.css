@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo2 {
+    width: 175px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    top: 10px; /* Adjust the distance from the top */
+    left: 50px; /* Adjust the distance from the left */
+  }
+  
+  .navBar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-bottom: 20ch;
+    border-radius: 20px;
+  }
+  .buyButton{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(255, 81, 0); /* Change to desired color */
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 43px; /* Adjust the distance from the top */
+    right: 350px; /* Adjust the distance from the left */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
+  .sellButton{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(255, 81, 0); /* Change to desired color */
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 43px;; /* Adjust the distance from the top */
+    right: 250px; /* Adjust the distance from the left */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
+  .helpButton{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 171, 115, 0.323);
+    color: rgb(255, 81, 0); /* Change to desired color */
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 43px;; /* Adjust the distance from the top */
+    right: 150px; /* Adjust the distance from the left */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
+  .profile{
+    width:50px;
+    height: auto;
+    position: fixed;
+    top: 32px; 
+    right: 50px;
+    padding: 5px 5px; 
+    border-radius: 100px; 
+  }
+  
+  .sellButton a, .buyButton a, .helpButton a {
+    color: inherit; /* Inherit color from parent element (orange) */
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .profile:hover {
+    width: 50px;
+    background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
+    border-radius: 1000px;
+  }
+  .buyButton:hover, .sellButton:hover, .helpButton:hover {
+    background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
+  }
+  
