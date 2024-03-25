@@ -1,73 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
+function contactRealtor() {
+    // This function could be expanded to actually send an email or open the user's email client.
+    alert('Thank you for your interest. The realtor will contact you shortly.');
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
+// Example of form submission handling
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('form');
 
-nav a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: black;
-}
+    form.onsubmit = function(e) {
+        e.preventDefault(); // Prevents the default form submission action
+        var name = form.querySelector('input[placeholder="Full Name"]').value;
+        var email = form.querySelector('input[placeholder="Contact Email"]').value;
+        var cell = form.querySelector('input[placeholder="Contact Cell"]').value;
+        var message = form.querySelector('textarea').value;
 
-#logo {
-    width: 100px; /* Adjust as per actual logo size */
-}
+        // Here you would typically send the data to a server
+        console.log('Form submitted with:', {name, email, cell, message});
 
-#contact-form {
-    width: 50%;
-    float: left;
-}
+        alert('Your message has been sent! Thank you, ' + name);
 
-#listing-details {
-    width: 50%;
-    float: right;
-}
-
-form {
-    margin: 20px;
-}
-
-input, textarea {
-    display: block;
-    margin-bottom: 10px;
-    width: 95%;
-    padding: 5px;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #ff9900;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-.price-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.deal {
-    background-color: green;
-    color: white;
-    padding: 5px;
-}
-
-.property-info {
-    background-color: #f0f0f0;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+        // Reset the form after submission
+        form.reset();
+    };
+});
