@@ -114,3 +114,12 @@ body {
 .buyButton:hover, .sellButton:hover, .helpButton:hover {
   background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
 }
+
+.recently_viewed{
+  font-size: 20px;
+  font-weight: bold;
+  color:  rgb(255, 81, 0);
+  position: absolute;
+  bottom: 225px;
+  left: 50px;
+}
