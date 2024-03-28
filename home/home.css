@@ -90,6 +90,15 @@ body {
   margin-bottom: 10px;
 }
 
+.dream-location{
+  font-family:cursive;
+  font-size: 35px;
+  font-weight: bold;
+  color:  rgb(255, 81, 0);
+  position: absolute;
+  top: 250px;
+}
+
 .search-button {
   padding: 10px 20px;
   border-radius: 20px;
@@ -118,6 +127,7 @@ body {
 }
 
 .recently_viewed{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   font-weight: bold;
   color:  rgb(255, 81, 0);

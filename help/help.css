@@ -8,13 +8,9 @@ body {
 
 .logo2 {
   width: 175px;
-  /* Adjust the width as needed */
   height: auto;
-  /* Maintain aspect ratio */
   top: 10px;
-  /* Adjust the distance from the top */
   left: 50px;
-  /* Adjust the distance from the left */
 }
 
 .navBar{
