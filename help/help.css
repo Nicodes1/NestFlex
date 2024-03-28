@@ -124,7 +124,7 @@ body {
   width: 100%;
   top: 120px;
   text-align: left;
-  position: fixed;
+  position: absolute;
   height: max-content;
   margin-left: 120px;
 }
@@ -133,20 +133,28 @@ h1 {
   color: #FF5800;
   font-size: 36px;
   font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-ul li a {
+ul1 li a {
   text-decoration: none;
   /* Remove underline from links */
   color: black;
   /* Set link color */
   font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-ul li a:hover {
+ul1 li a:hover {
   text-decoration: underline;
   /* Add underline on hover */
   color: black;
   /* Change link color on hover */
   font-size: 24px;
+}
+
+
+ul1 {
+  top: -18px;
+  position: relative;
 }
