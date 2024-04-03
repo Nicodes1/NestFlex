@@ -122,8 +122,8 @@ body {
 }
 
 .relatedQuestions {
-  height: 843px;
-  width: 450px;
+  height: 450px;
+  width: 490px;
   top: 120px;
   left: 45px;
   text-align: left;
@@ -148,6 +148,7 @@ ul li a {
   color: black;
   /* Set link color */
   font-size: 24px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul li a:hover {
@@ -155,10 +156,11 @@ ul li a:hover {
   /* Add underline on hover */
   color: black;
   font-size: 24px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
-  width: 900px;
+  width: 75%;
   top: 120px;
   text-align: left;
   position: absolute;
@@ -171,10 +173,12 @@ h1 {
   /* Change the color of the heading text */
   font-size: 36px;
   font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
   font-size: 24px;
   /* Change the font size of the paragraph */
   color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
