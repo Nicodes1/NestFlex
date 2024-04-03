@@ -136,12 +136,8 @@ html, body {
   .search-button:hover, .filter-button:hover, .filterPop button:hover {
     background-color: rgb(212, 85, 0); /* Change this to the desired hover color */
   }
-  .profile:hover {
-    width: 50px;
-    background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
-    border-radius: 1000px;
-  }
-  .buyButton:hover, .sellButton:hover, .helpButton:hover {
+ 
+  .buyButton:hover, .sellButton:hover, .helpButton:hover, .profile:hover {
     background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
   }
   .mapListingCountainer{
@@ -235,7 +231,7 @@ html, body {
 .filterPop {
   width: 60%;
   height: 60%;
-  background-color: rgb(255, 221, 198);
+  background-color: rgb(255, 233, 219);
   border-radius: 8px;
   position:absolute;
   top: 0;
@@ -292,7 +288,21 @@ html, body {
   right: 100px;
 }
 .filterPop h3{
+  left:10px;
   font-size: 18px;
   position: relative;
   left: 10px;
+}
+button.bedButton{
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+button.bedButton:hover{
+  background-color: rgba(255, 156, 118, 0.85);
+}
+.bedButton.clicked{
+  background-color: rgba(255, 129, 80, 0.894);
+  outline:2px solid black;
+  color:black;
 }

@@ -35,22 +35,24 @@
       <input type="text" id="priceMin" placeholder="Min">
       <input type="text" id="priceMax" placeholder="Max">
       <h3>Bedrooms:</h3>
-      <button type="button" class="bedButton">1</button>
-      <button type="button" class="bedButton">2</button>
-      <button type="button" class="bedButton">3</button>
-      <button type="button" class="bedButton">4</button>
-      <button type="button" class="bedButton">5+</button>
+      <button type="button" class="bedButton" onclick="bedSelected(this)">1</button>
+      <button type="button" class="bedButton" onclick="bedSelected(this)">2</button>
+      <button type="button" class="bedButton" onclick="bedSelected(this)">3</button>
+      <button type="button" class="bedButton" onclick="bedSelected(this)">4</button>
+      <button type="button" class="bedButton" onclick="bedSelected(this)">5+</button>
       <h3>Bathrooms:</h3>
-      <button type="button" class="bedButton">1</button>
-      <button type="button" class="bedButton">2</button>
-      <button type="button" class="bedButton">3</button>
-      <button type="button" class="bedButton">4</button>
-      <button type="button" class="bedButton">5+</button>
+      <button type="button" class="bedButton" onclick="bedSelected(this)">1</button>
+      <button type="button" class="bedButton" onclick="bedSelected(this)">2</button>
+      <button type="button" class="bedButton" onclick="bedSelected(this)">3</button>
+      <button type="button" class="bedButton" onclick="bedSelected(this)">4</button>
+      <button type="button" class="bedButton" onclick="bedSelected(this)">5+</button>
       <h3>Square Feet:</h3>
+      <input type="text" id="squareMin" placeholder="Min">
+      <input type="text" id="squareMax" placeholder="Max">
       <h3>Type: </h3>
       <p>Number of Results: <span>3</span></p>
       <button type="button" class="close" onclick="closeFilter()">Close</button>
-      <button type="button" class="reset">Reset</button>
+      <button type="button" class="reset" onclick="reset()">Reset</button>
       <button type="button" class="apply" onclick="changeListings()">Apply</button>
       <button type="button" class="applySaved" onclick="changeListings()">Apply saved filters</button>
     </div>
