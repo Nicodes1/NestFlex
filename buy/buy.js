@@ -12,9 +12,18 @@ function changeListings(){
 
 function bedSelected(bedButton){
     bedButton.classList.add('clicked')
+    let spanElement = document.getElementById('resultCount');
+        // Change the content of the span element
+        spanElement.textContent = '5';
 }
-
-// let filterPop() = document.getElementsByClassName('filterPop')
-// function reset(){
-
-// }
+let buttons = document.getElementsByClassName('bedButton');
+function reset() {
+    for (let i = 0; i < buttons.length; i++) {
+        console.log("hello")
+        buttons[i].classList.remove('clicked');
+    }
+    let inputs = document.getElementsByTagName('input');
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].value = '';
+    }
+}
