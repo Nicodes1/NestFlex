@@ -122,8 +122,9 @@ body {
 }
 
 .relatedQuestions {
-  height: 450px;
+  max-height: 100%;
   width: 490px;
+  max-width: 30%;
   top: 120px;
   left: 45px;
   text-align: left;
@@ -160,7 +161,7 @@ ul li a:hover {
 }
 
 .container {
-  width: 75%;
+  max-width: 75%;
   top: 120px;
   text-align: left;
   position: absolute;
