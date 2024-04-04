@@ -50,10 +50,27 @@
       <input type="text" id="squareMin" placeholder="Min">
       <input type="text" id="squareMax" placeholder="Max">
       <h3>Type: </h3>
+      <div class="checkbox-container">
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">House</label>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">Duplex</label>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">TownHome</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">Acreage</label>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">Apartment</label>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">Condo</label>
+      </div>
+
       <p>Number of Results: <span id="resultCount">8</span></p>
       <button type="button" class="close" onclick="closeFilter()">Close</button>
       <button type="button" class="reset" onclick="reset()">Reset</button>
-      <button type="button" class="apply" onclick="changeListings()">Apply</button>
+      <button type="button" class="apply" id="apply" onclick="changeListings()">Apply</button>
       <button type="button" class="applySaved" onclick="changeListings()">Apply saved filters</button>
     </div>
   </div>
@@ -63,92 +80,148 @@
     </div>
     <div class="listings">
       <div class="left-col">
-        <p>200 options</p>
-        <h1>places in calgary</h1>
         <!-- Start of house1 listing -->
-        <div class="house">
-          <div class = "house-img">
-            <img src="/pics/house1/home1.jpeg">
-          </div>
-          <div class = "house-info">
-            <div class="house-price">
-              <link href='https://unpkg.com/css.gg@2.0.0/icons/css/heart.css' rel='stylesheet'>
-              <h4><span>CAD</span> 240,000</h4>
+        <a href="/listing/house1/house1.html">
+          <div class="hideable">
+           <div class="house"> 
+              <div class = "house-img">
+                <img src="/pics/house1/home1.jpeg">
+              </div>
+              <div class = "house-info">
+                <div class="house-price">
+                  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/heart.css' rel='stylesheet'>
+                  <h4><span>CAD</span> 240,000<span class="goodDeal">Good Deal</span></h4>
+                </div>
+                <h3>Seton SE Calgary</h3>
+                <p>2 bedroom/2 bathroom/1234 sqft</p>  
+                <p>House</p>       
+              </div>
             </div>
-            <h3>Seton SE Calgary</h3>
-            <p>1bedroom / 2bathroom / 1234 sqft</p>           
           </div>
-        </div>
+        </a>
         <!-- end of house listing -->
-        <div class="house">
-          <div class = "house-img">
-            <img src="/pics/house2/house2main.jpeg">
-          </div>
-          <div class = "house-info">
-            <div class="house-price">
-              <h4><span>CAD</span> 800,000</h4>
+        <a href="/listing/house2/house2.html">
+          <div class="house">
+            <div class = "house-img">
+              <img src="/pics/house2/house2main.jpeg">
             </div>
-            <p>Altadore NW Calgary</p>
-            <p>1bedroom/2bathroom</p>
+            <div class = "house-info">
+              <div class="house-price">
+                <h4><span>CAD</span> 1,000,000<span class="avgDeal">Average Deal</span></h4>
+              </div>
+              <p>Altadore NW Calgary</p>
+              <p>3 bedroom/4 bathroom/2000 sqft</p>
+              <p>House</p>    
+            </div>
           </div>
-    
-        </div>
+          </a>
         <!-- Start of house 3 listing -->
+        <a href="/listing/house1/house1.html">
         <div class="house">
           <div class = "house-img">
             <img src="/pics/house3/house3.jpeg">
           </div>
           <div class = "house-info">
             <div class="house-price">
-              <h4><span>CAD</span> 1,000,000</h4>
+              <h4><span>CAD</span> 1,200,000<span class="goodDeal">Good Deal</span></h4>
             </div>
             <p>Shawnessy SW Calgary</p>
-            <p>1bedroom/2bathroom</p>
+            <p>6 bedroom/8 bathroom/ 4000sqft</p>
+            <p>Acreage</p>    
           </div>
         </div>
+        </a>
         <!-- end of house listing -->
         <!-- Start of house 4 listing -->
-        <div class="house">
-          <div class = "house-img">
-            <img src="/pics/house4/house4.avif">
-          </div>
-          <div class = "house-info">
-            <div class="house-price">
-              <h4><span>CAD</span> 210,000</h4>
+        <a href="/listing/house1/house1.html">
+        <div class="hideable">  
+          <div class="house">
+            <div class = "house-img">
+              <img src="/pics/house4/house4.jpeg">
             </div>
-            <p>Sunridge NE Calgary</p>
-            <p>1bedroom/2bathroom</p>
+            <div class = "house-info">
+              <div class="house-price">
+                <h4><span>CAD</span> 310,000<span class="gr8Deal">Great Deal</span></h4>
+              </div>
+              <p>Sunridge NE Calgary</p>
+              <p>1 bedroom/2 bathroom/1400sqft</p>
+              <p>Duplex</p>
+            </div>
           </div>
         </div>
+        </a>
         <!-- end of house listing -->
         <!-- Start of house 5 listing -->
-        <div class="house">
-          <div class = "house-img">
-            <img src="/pics/house5/luxury-home-listing-presentation-1.jpg">
-          </div>
-          <div class = "house-info">
-            <div class="house-price">
-              <h4><span>CAD</span> 1,200,000</h4>
+        <a href="/listing/house1/house1.html">
+          <div class="house">
+            <div class = "house-img">
+              <img src="/pics/house5/luxury-home-listing-presentation-1.jpg">
             </div>
-            <p>Tuscany NW Calgary</p>
-            <p>1bedroom/2bathroom</p>
+            <div class = "house-info">
+              <div class="house-price">
+                <h4><span>CAD</span> 3,200,000<span class="avgDeal">Average Deal</span></h4>
+              </div>
+              <p>Tuscany NW Calgary</p>
+              <p>4 bedroom/7 bathroom/2300sqft</p>
+              <p>House</p>
+            </div>
           </div>
-        </div>
+        </a>
         <!-- end of house listing -->
         <!-- Start of house 6 listing -->
+        <a href="/listing/house1/house1.html">
+        <div class="hideable">
+          <div class="house">
+            <div class = "house-img">
+              <img src="/pics/house6/house6.jpeg">
+            </div>
+            <div class = "house-info">
+              <div class="house-price">
+                <h4><span>CAD</span> 500,000<span class="goodDeal">Good Deal</span></h4>
+              </div>
+              <p>Inglewood NW Calgary</p>
+              <p>1 bedroom/1 bathroom/800sqft</p>
+              <p>Apartment</p>
+            </div>
+          </div>
+        </div>
+        </a>
+        <!-- end of house listing -->
+         <!-- Start of house 7 listing -->
+        <a href="/listing/house1/house1.html">
+          <div class="hideable">
+            <div class="house">
+              <div class = "house-img">
+                <img src="/pics/house7/house7.jpeg">
+              </div>
+              <div class = "house-info">
+                <div class="house-price">
+                  <h4><span>CAD</span> 800,000<span class="gr8Deal">Great Deal</span></h4>
+                </div>
+                <p>Inglewood NW Calgary</p>
+                <p>5 bedroom/5 bathroom/ 5000sqft</p>
+                <p>Acreage</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- end of house listing -->
+         <!-- Start of house 8 listing -->
+        <a href="/listing/house1/house1.html">
         <div class="house">
           <div class = "house-img">
-            <img src="/pics/house6/00_E4379572_01.jpeg">
+            <img src="/pics/house8/house8.avif">
           </div>
           <div class = "house-info">
             <div class="house-price">
-              <h4><span>CAD</span> 500,000</h4>
+              <h4><span>CAD</span> 2,200,000<span class="goodDeal">Good Deal</span></h4>
             </div>
             <p>Inglewood NW Calgary</p>
-            <p>1bedroom/2bathroom</p>
+            <p>8 bedroom/9 bathroom/4800sqft</p>
+            <p>House</p>
           </div>
-          <!-- <div class="right-col"></div> -->
         </div>
+        </a>
         <!-- end of house listing -->
       </div>
     </div>

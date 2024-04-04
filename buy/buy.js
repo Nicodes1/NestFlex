@@ -8,6 +8,10 @@ function closeFilter(){
 }
 function changeListings(){
     popup.classList.remove("open-popup")
+    let targetDivs = document.getElementsByClassName("hideable");
+    for (let i = 0; i < targetDivs.length; i++) {
+        targetDivs[i].classList.toggle("hide");
+    }
 }
 
 function bedSelected(bedButton){
@@ -27,3 +31,6 @@ function reset() {
         inputs[i].value = '';
     }
 }
+
+
+
