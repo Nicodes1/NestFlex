@@ -18,11 +18,37 @@
       <button class="buyButton" type="button"><a href="/buy//buy.html">BUY</a></button>
       <button class="sellButton" type="button"><a href="/sell/sell.html">SELL</a></button>
       <button class="helpButton" type="button"><a href="/help/help.html">HELP</a></button>
-      <a href="/profile/profile.html">
-        <img src="/profile-icon.png" alt="Clickable-PNG" class="profile">
+      <a>
+        <img src="/profile-icon.png" alt="Clickable-PNG" class="profile" onclick="openSignUp()">
       </a>
     </ul>
   </nav>
+
+  <div>
+    <div class="signInPop" id="signIn">
+      <a>
+        <img src="/close.png" alt="Clickable-PNG" class="close" onclick="closeSignUp()">
+      </a>
+      <a href="/home/home.html">
+        <img src="/logo2.png" alt="Clickable PNG" class="logo2">
+      </a>
+      <h1>EMAIL</h1>
+      <form id="form">
+        <div class="search-container">
+          <input type="text" id="input-bar" class="input-bar">
+        </div>
+      </form>
+      <h1>PASSWORD</h1>
+      <form id="form">
+        <div class="search-container">
+          <input type="text" id="input-bar" class="input-bar">
+        </div>
+      </form>
+      <button type="submit" class="signInButton"><a href="/buy/buy.html">SIGN IN</a></button>
+
+      <button type="submit" class="createAccountButton"><a href="/buy/buy.html">CREATE ACCOUNT</a></button>
+    </div>
+  </div>
 
   <div class="container">
     <h1>HOME BUYERS</h1>
@@ -31,14 +57,16 @@
       <li><a href="/..//answer//buyer//ba2.html">What criteria can I use to filter my property search?</a></li>
       <li><a href="/..//answer//buyer//ba3.html">Can I save properties I'm interested in for later viewing?</a></li>
       <li><a href="/..//answer//buyer//ba4.html">How do I schedule a viewing for a property?</a></li>
-      <li><a href="/..//answer//buyer//ba5.html">What is the process for making an offer on a property listed on the website?</a></li>
+      <li><a href="/..//answer//buyer//ba5.html">What is the process for making an offer on a property listed on the
+          website?</a></li>
       <li><a style="font-weight: bold; text-decoration: underline;" href="page3.html">SEE MORE</a></li>
     </ul1>
 
     <h1>HOME SELLERS</h1>
     <ul1>
       <li><a href="/..//answer//seller//sa1.html">How do I list my property on the website?</a></li>
-      <li><a href="/..//answer//seller//sa2.html">What information do I need to provide when creating a listing?</a></li>
+      <li><a href="/..//answer//seller//sa2.html">What information do I need to provide when creating a listing?</a>
+      </li>
       <li><a href="/..//answer//seller//sa3.html">Can I edit or update my listing after it's been posted?</a></li>
       <li><a href="/..//answer//seller//sa4.html">How do I upload photos of my property?</a></li>
       <li><a href="/..//answer//seller//sa5.html">Is there a fee for listing my property on the website?</a></li>
@@ -48,14 +76,19 @@
     <h1>REALTORS</h1>
     <ul1>
       <li><a href="/..//answer//realtor//ra1.html">Can I schedule appointments or showing through the website?</a></li>
-      <li><a href="/..//answer//realtor//ra2.html">Are there any training or educational resources available for realtors on the
+      <li><a href="/..//answer//realtor//ra2.html">Are there any training or educational resources available for
+          realtors on the
           website?</a></li>
-      <li><a href="/..//answer//realtor//ra3.html">How do I connect with potential buyers or sellers through the website?</a></li>
-      <li><a href="/..//answer//realtor//ra4.html">Can I customize my profile or listings with branding or logos?</a></li>
-      <li><a href="/..//answer//realtor//ra5.html">Are there any networking opportunities or events for realtors on the website?</a></li>
+      <li><a href="/..//answer//realtor//ra3.html">How do I connect with potential buyers or sellers through the
+          website?</a></li>
+      <li><a href="/..//answer//realtor//ra4.html">Can I customize my profile or listings with branding or logos?</a>
+      </li>
+      <li><a href="/..//answer//realtor//ra5.html">Are there any networking opportunities or events for realtors on the
+          website?</a></li>
       <li><a style="font-weight: bold; text-decoration: underline;" href="page3.html">SEE MORE</a></li>
     </ul1>
   </div>
+  <script src="help.js"></script>
 </body>
 
 </html>

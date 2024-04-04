@@ -1,9 +1,12 @@
 body {
   margin: 0;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo2 {
@@ -13,7 +16,7 @@ body {
   left: 50px;
 }
 
-.navBar{
+.navBar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -21,9 +24,10 @@ body {
   display: flex;
   border-bottom: 20ch;
   border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   z-index: 1000;
 }
+
 .buyButton {
   font-size: 20px;
   font-weight: bold;
@@ -95,7 +99,9 @@ body {
 
 .sellButton a,
 .buyButton a,
-.helpButton a {
+.helpButton a,
+.signInButton a,
+.createAccountButton a {
   color: inherit;
   /* Inherit color from parent element (orange) */
   text-decoration: none;
@@ -129,7 +135,6 @@ h1 {
   color: #FF5800;
   font-size: 36px;
   font-weight: bold;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul1 li a {
@@ -138,7 +143,6 @@ ul1 li a {
   color: black;
   /* Set link color */
   font-size: 24px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul1 li a:hover {
@@ -153,4 +157,99 @@ ul1 li a:hover {
 ul1 {
   top: -18px;
   position: relative;
+}
+
+.signInPop {
+  width: 40%;
+  height: 70%;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  outline: 2px solid rgb(183, 90, 32);
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: rgb(56, 56, 56);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 9999;
+}
+
+.open-signIn {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: auto;
+  padding: 5px 5px;
+  border-radius: 100px;
+  overflow: auto;
+}
+
+.close:hover {
+  width: 50px;
+  background-color: rgba(255, 171, 115, 0.323);
+  /* Change this to the desired hover color */
+  border-radius: 1000px;
+}
+
+.signInPop h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin: 10px 0px 10px;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.input-bar {
+  padding: 10px;
+  width: 80%;
+  height: 25px;
+  border: 2px solid #FF5800;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.signInButton {
+  margin-top: 30px;
+  width: 60%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+  outline: none;
+  background-color: rgba(255, 171, 115, 0.323);
+  /* Change this to the desired color */
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  /* display: block; */
+}
+
+.createAccountButton {
+  margin-top: 5px;
+  width: 60%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: white;
+  /* Change this to the desired color */
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
