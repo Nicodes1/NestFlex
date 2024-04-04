@@ -28,14 +28,15 @@ function changeListings() {
 document.getElementById('createAccountButton').addEventListener('click', function () {
     // Hide stuff for create account
     var forgotPass = document.getElementById('forgotPass');
-    var signIn = document.getElementById('signInB');
-
     forgotPass.classList.add('hidden');
+    
+    var signIn = document.getElementById('signInB');
     signIn.classList.add('hidden');
 
     // Show stuff for create account
     var conPass = document.getElementById('conPass-bar');
     conPass.classList.remove('hidden');
+
     var conPassTxt = document.getElementById('conPassTxt');
     conPassTxt.classList.remove('hidden');
 });
