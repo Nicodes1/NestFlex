@@ -159,9 +159,11 @@ ul1 {
   position: relative;
 }
 
+/* Sign in pop up */
+
 .signInPop {
   width: 40%;
-  height: 70%;
+  height: 60%;
   background-color: white;
   border-radius: 8px;
   position: absolute;
@@ -253,3 +255,28 @@ ul1 {
   font-weight: bold;
   cursor: pointer;
 }
+
+.forgotPasswordButton {
+  margin-top: 5px;
+  width: 60%;
+  /* padding: 10px 20px; */
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: white;
+  /* Change this to the desired color */
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* End of sign in pop up */
+
+/* Create Account in pop up */
+
+.hidden {
+  display: none;
+}
+
+/* End of sign in pop up */
