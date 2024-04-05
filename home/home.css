@@ -4,15 +4,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.logo2 {
-  width: 175px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  top: 10px; /* Adjust the distance from the top */
-  left: 50px; /* Adjust the distance from the left */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.navBar{
+.logo2 {
+  width: 175px;
+  /* Adjust the width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  top: 10px;
+  /* Adjust the distance from the top */
+  left: 50px;
+  /* Adjust the distance from the left */
+}
+
+.navBar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -20,56 +26,77 @@ body {
   display: flex;
   border-bottom: 20ch;
   border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   z-index: 1000;
 }
-.buyButton{
+
+.buyButton {
   font-size: 20px;
   font-weight: bold;
   background-color: white;
-  color: rgb(255, 81, 0); /* Change to desired color */
+  color: rgb(255, 81, 0);
+  /* Change to desired color */
   border: none;
   outline: none;
   position: fixed;
-  top: 43px; /* Adjust the distance from the top */
-  right: 350px; /* Adjust the distance from the left */
-  padding: 10px 20px; /* Adjust padding as needed */
-  border-radius: 5px; /* Optional: Add rounded corners */
+  top: 43px;
+  /* Adjust the distance from the top */
+  right: 350px;
+  /* Adjust the distance from the left */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border-radius: 5px;
+  /* Optional: Add rounded corners */
 }
-.sellButton{
+
+.sellButton {
   font-size: 20px;
   font-weight: bold;
   background-color: white;
-  color: rgb(255, 81, 0); /* Change to desired color */
+  color: rgb(255, 81, 0);
+  /* Change to desired color */
   border: none;
   outline: none;
   position: fixed;
-  top: 43px;; /* Adjust the distance from the top */
-  right: 250px; /* Adjust the distance from the left */
-  padding: 10px 20px; /* Adjust padding as needed */
-  border-radius: 5px; /* Optional: Add rounded corners */
+  top: 43px;
+  ;
+  /* Adjust the distance from the top */
+  right: 250px;
+  /* Adjust the distance from the left */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border-radius: 5px;
+  /* Optional: Add rounded corners */
 }
-.helpButton{
+
+.helpButton {
   font-size: 20px;
   font-weight: bold;
   background-color: white;
-  color: rgb(255, 81, 0); /* Change to desired color */
+  color: rgb(255, 81, 0);
+  /* Change to desired color */
   border: none;
   outline: none;
   position: fixed;
-  top: 43px;; /* Adjust the distance from the top */
-  right: 150px; /* Adjust the distance from the left */
-  padding: 10px 20px; /* Adjust padding as needed */
-  border-radius: 5px; /* Optional: Add rounded corners */
+  top: 43px;
+  ;
+  /* Adjust the distance from the top */
+  right: 150px;
+  /* Adjust the distance from the left */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border-radius: 5px;
+  /* Optional: Add rounded corners */
 }
-.profile{
-  width:50px;
+
+.profile {
+  width: 50px;
   height: auto;
   position: fixed;
-  top: 32px; 
+  top: 32px;
   right: 50px;
-  padding: 5px 5px; 
-  border-radius: 100px; 
+  padding: 5px 5px;
+  border-radius: 100px;
 }
 
 .search-container {
@@ -85,16 +112,17 @@ body {
   height: 25px;
   border: 50px;
   border-radius: 50px;
-  background-color:rgba(255, 171, 115, 0.323); /* Change this to the desired color */
+  background-color: rgba(255, 171, 115, 0.323);
+  /* Change this to the desired color */
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-.dream-location{
-  font-family:cursive;
+.dream-location {
+  font-family: cursive;
   font-size: 35px;
   font-weight: bold;
-  color:  rgb(255, 81, 0);
+  color: rgb(255, 81, 0);
   position: absolute;
   top: 250px;
 }
@@ -104,34 +132,190 @@ body {
   border-radius: 20px;
   border: none;
   outline: none;
-  background-color: rgb(255, 102, 0); /* Change this to the desired color */
+  background-color: rgb(255, 102, 0);
+  /* Change this to the desired color */
   color: white;
   font-size: 16px;
   cursor: pointer;
 }
-.sellButton a, .buyButton a, .helpButton a, .search-button a {
-  color: inherit; /* Inherit color from parent element (orange) */
-  text-decoration: none; /* Remove underline from the link */
+
+.sellButton a,
+.buyButton a,
+.helpButton a,
+.search-button a {
+  color: inherit;
+  /* Inherit color from parent element (orange) */
+  text-decoration: none;
+  /* Remove underline from the link */
 }
 
 .search-button:hover {
-  background-color: rgb(212, 85, 0); /* Change this to the desired hover color */
-}
-.profile:hover {
-  width: 50px;
-  background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
-  border-radius: 1000px;
-}
-.buyButton:hover, .sellButton:hover, .helpButton:hover {
-  background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
+  background-color: rgb(212, 85, 0);
+  /* Change this to the desired hover color */
 }
 
-.recently_viewed{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+.profile:hover {
+  width: 50px;
+  background-color: rgba(255, 171, 115, 0.323);
+  /* Change this to the desired hover color */
+  border-radius: 1000px;
+}
+
+.buyButton:hover,
+.sellButton:hover,
+.helpButton:hover {
+  background-color: rgba(255, 171, 115, 0.323);
+  /* Change this to the desired hover color */
+}
+
+.recently_viewed {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   font-weight: bold;
-  color:  rgb(255, 81, 0);
+  color: rgb(255, 81, 0);
   position: absolute;
   bottom: 225px;
   left: 50px;
 }
+
+.signInPop {
+  width: 40%;
+  max-height: 60%;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  outline: 2px solid rgb(183, 90, 32);
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: rgb(56, 56, 56);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 9999;
+}
+
+.open-signIn {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: auto;
+  padding: 5px 5px;
+  border-radius: 100px;
+  overflow: auto;
+}
+
+.close:hover {
+  width: 50px;
+  background-color: rgba(255, 171, 115, 0.323);
+  /* Change this to the desired hover color */
+  border-radius: 1000px;
+}
+
+h1 {
+  color: #FF5800;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.signInPop h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin: 10px 0px 10px;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.signInPop e1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  margin: 10px 0px 10px;
+  text-align: center;
+}
+
+.signInPop f1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  margin: 10px 0px 10px;
+  text-align: center;
+}
+
+.input-bar {
+  padding: 10px;
+  width: 80%;
+  height: 25px;
+  border: 2px solid #FF5800;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.signInButton {
+  margin-top: 30px;
+  width: 60%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+  outline: none;
+  background-color: rgba(255, 171, 115, 0.323);
+  /* Change this to the desired color */
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  /* display: block; */
+}
+
+.createAccountButton {
+  margin-top: 5px;
+  width: 60%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: white;
+  /* Change this to the desired color */
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forgotPasswordButton {
+  margin-top: 5px;
+  width: 60%;
+  /* padding: 10px 20px; */
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: white;
+  /* Change this to the desired color */
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* End of sign in pop up */
+
+/* Create Account in pop up */
+
+.hidden {
+  display: none;
+}
+
+/* End of sign in pop up */
