@@ -50,9 +50,14 @@
           <input type="text" id="conPass-bar" class="input-bar">
         </div>
       </form>
-      <button type="submit" id="forgotPass" class="forgotPasswordButton"><a href="/buy/buy.html">FORGOT PASSWORD?</a></button>
+      <e1 id="wrongInfo">Incorrect Email or Password!</e1>
+      <f1 id="resetEmail">Password Reset Email Sent!</f1>
+      <f1 id="accountCreated">Account Successfully Created!</f1>
+      <e1 id="accountError">Enter valid Email or Password!</e1>
+      <button type="submit" id="forgotPass" class="forgotPasswordButton"><a onclick="resetPass()">FORGOT
+          PASSWORD?</a></button>
 
-      <button type="submit" id="signInB" class="signInButton"><a href="/profile/profile.html">SIGN IN</a></button>
+      <button type="submit" id="signInB" class="signInButton"><a onclick="login()">SIGN IN</a></button>
 
       <button type="submit" class="createAccountButton" id="createAccountButton"><a>CREATE ACCOUNT</a></button>
     </div>
