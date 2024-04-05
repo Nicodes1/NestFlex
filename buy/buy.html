@@ -30,7 +30,7 @@
   <div>
     <button type="button" class="filter-button" onclick="openFilter()">Filters</button>
     <div class ="filterPop" id="popup">
-      <h2>FILTERS</h2>
+      <h3 id="filterTitle">FILTERS</h3>
       <h3>Price Range:</h3>
       <input type="text" id="priceMin" placeholder="Min">
       <input type="text" id="priceMax" placeholder="Max">
@@ -38,40 +38,43 @@
       <button type="button" class="bedButton" onclick="bedSelected(this)">1</button>
       <button type="button" class="bedButton" onclick="bedSelected(this)">2</button>
       <button type="button" class="bedButton" onclick="bedSelected(this)">3</button>
-      <button type="button" class="bedButton" onclick="bedSelected(this)">4</button>
+      <button type="button" class="bedButton" id="bed4" onclick="bedSelected(this)">4</button>
       <button type="button" class="bedButton" onclick="bedSelected(this)">5+</button>
       <h3>Bathrooms:</h3>
       <button type="button" class="bedButton" onclick="bedSelected(this)">1</button>
       <button type="button" class="bedButton" onclick="bedSelected(this)">2</button>
       <button type="button" class="bedButton" onclick="bedSelected(this)">3</button>
       <button type="button" class="bedButton" onclick="bedSelected(this)">4</button>
-      <button type="button" class="bedButton" onclick="bedSelected(this)">5+</button>
+      <button type="button" class="bedButton" id="bath5" onclick="bedSelected(this)">5+</button>
       <h3>Square Feet:</h3>
       <input type="text" id="squareMin" placeholder="Min">
       <input type="text" id="squareMax" placeholder="Max">
       <h3>Type: </h3>
       <div class="checkbox-container">
-        <input type="checkbox" id="checkbox1">
+        <input type="checkbox" id="houseBox">
         <label for="checkbox1">House</label>
-        <input type="checkbox" id="checkbox1">
+        <input type="checkbox">
         <label for="checkbox1">Duplex</label>
-        <input type="checkbox" id="checkbox1">
+        <input type="checkbox">
         <label for="checkbox1">TownHome</label>
       </div>
       <div class="checkbox-container">
-        <input type="checkbox" id="checkbox2">
+        <input type="checkbox" >
         <label for="checkbox2">Acreage</label>
-        <input type="checkbox" id="checkbox2">
+        <input type="checkbox">
         <label for="checkbox2">Apartment</label>
-        <input type="checkbox" id="checkbox2">
+        <input type="checkbox">
         <label for="checkbox2">Condo</label>
       </div>
 
       <p>Number of Results: <span id="resultCount">8</span></p>
-      <button type="button" class="close" onclick="closeFilter()">Close</button>
+      <a>
+        <img src="/close.png" alt="Clickable-PNG" class="close" onclick="closeFilter()">
+      </a>
+      <!-- <button type="button" class="close" onclick="closeFilter()">Close</button> -->
       <button type="button" class="reset" onclick="reset()">Reset</button>
       <button type="button" class="apply" id="apply" onclick="changeListings()">Apply</button>
-      <button type="button" class="applySaved" onclick="changeListings()">Apply saved filters</button>
+      <button type="button" class="applySaved" onclick="savedFilter()">Apply saved filters</button>
     </div>
   </div>
   <div class="mapListingCountainer">

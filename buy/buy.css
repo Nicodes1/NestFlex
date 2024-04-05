@@ -254,6 +254,7 @@ html, body {
 }
 .filterPop h2{
   font-size: 25px;
+  align-content: center;
   font-weight: 200;
   margin: 10px 0px 10px;
 } 
@@ -267,10 +268,13 @@ html, body {
   border-radius: 50px;
   cursor: pointer;
 }
-.filterPop button.close {
+.filterPop .close {
+  width: 40px;
+  height: auto;
   position: absolute;
   top: 10px;
   left: 10px;
+  cursor: pointer;
 }
 .filterPop button.apply {
   position: absolute;
@@ -288,11 +292,8 @@ html, body {
   bottom: 10px;
   right: 100px;
 }
-.filterPop h3{
-  left:10px;
-  font-size: 18px;
-  position: relative;
-  left: 10px;
+.filterPop #filterTitle{
+  font-size: 25px;
 }
 button.bedButton{
   background-color: white;
