@@ -1,6 +1,8 @@
 let signIn = document.getElementById("signIn");
 let createCounter = 0;
 function openSignUp() {
+    createCounter = 0;
+    
     signIn.classList.add("open-signIn");
     document.body.style.overflow = 'hidden'; // Prevent scrolling
 
