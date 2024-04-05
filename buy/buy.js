@@ -17,8 +17,7 @@ function changeListings(){
 function bedSelected(bedButton){
     bedButton.classList.add('clicked')
     let spanElement = document.getElementById('resultCount');
-        // Change the content of the span element
-        spanElement.textContent = '5';
+        spanElement.textContent = '4';
 }
 let buttons = document.getElementsByClassName('bedButton');
 function reset() {
