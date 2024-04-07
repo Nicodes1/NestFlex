@@ -26,12 +26,78 @@
 
   <div class="profileInfo">
     <img src="/profile-icon.png" class="profilePic">
+    <div class="nameInfo">
+      <h1>FULL NAME</h1>
+      <input type="text" class="input-bar" value="FName LName">
+    </div>
 
-    <h1>FULL NAME</h1>
-    <input type="text" class="input-bar">
-
-    <div class ="preferences">
+    <div class="preferences">
       <p1>PREFERENCES</p1>
+
+      <div class="input-group">
+        <t1>Price Range:</t1>
+        <div class="input-info">
+          <t2>Minimum</t2>
+          <input type="text" id="priceMin" placeholder="Min" class="custom-input" value="900,000">
+          <t2>Maximum</t2>
+          <input type="text" id="priceMax" placeholder="Max" class="custom-input" value="4,000,000">
+        </div>
+      </div>
+
+      <div class="button-container">
+        <t1>Bedrooms:</t1>
+        <div class="buttons">
+          <button type="button" class="bedButton" onclick="bedSelected(this)">1</button>
+          <button type="button" class="bedButton" onclick="bedSelected(this)">2</button>
+          <button type="button" class="bedButton" onclick="bedSelected(this)">3</button>
+          <button type="button" class="bedButton" id="bed4" onclick="bedSelected(this)">4</button>
+          <button type="button" class="bedButton" onclick="bedSelected(this)">5+</button>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <t1>Bathrooms:</t1>
+        <div class="buttons">
+          <button type="button" class="bedButton" onclick="bedSelected(this)">1</button>
+          <button type="button" class="bedButton" onclick="bedSelected(this)">2</button>
+          <button type="button" class="bedButton" onclick="bedSelected(this)">3</button>
+          <button type="button" class="bedButton" onclick="bedSelected(this)">4</button>
+          <button type="button" class="bedButton" id="bath5" onclick="bedSelected(this)">5+</button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <t1>Square Feet:</t1>
+        <div class="input-info">
+          <t2>Minimum</t2>
+          <input type="text" id="priceMin" placeholder="Min" class="custom-input" value="1,000">
+          <t2>Maximum</t2>
+          <input type="text" id="priceMax" placeholder="Max" class="custom-input" value="6,000">
+        </div>
+      </div>
+
+      <div class="checkbox-group">
+        <t1>Type:</t1>
+        <div class="checkboxes">
+          <div class="checkbox-container">
+            <input type="checkbox" id="houseBox">
+            <label for="checkbox1">House</label>
+            <input type="checkbox">
+            <label for="checkbox1">Townhome</label>
+            <input type="checkbox">
+            <label for="checkbox1">Condo</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox">
+            <label for="checkbox2">Duplex</label>
+            <input type="checkbox">
+            <label for="checkbox2">Apartment</label>
+            <input type="checkbox">
+            <label for="checkbox2">Acreage</label>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -41,7 +107,7 @@
 
     <h1>ACTIVE LISTINGS</h1>
   </div>
-
+  <script src="profile.js"></script>
 </body>
 
 </html>
