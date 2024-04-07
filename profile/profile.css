@@ -101,7 +101,7 @@ body {
 .profilePic {
   position: relative;
   display: block;
-  margin: 0 auto;
+  margin-left: 20%;
   max-width: 400px;
   max-height: auto;
   top: 110px;
