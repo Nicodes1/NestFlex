@@ -47,34 +47,43 @@
         <button type="button" class="filter-button" onclick="openFilter()">Contact</button>
         <div class ="filterPop" id="popup">
             <h3 id="filterTitle">Contact</h3>
-            <h3>Price Range:</h3>
-            <input type="text" id="priceMin" placeholder="Min">
-            <input type="text" id="priceMax" placeholder="Max">
-            <h3>Bedrooms:</h3>
-            <button type="button" class="bedButton" onclick="bedSelected(this)">1</button>
-            <h3>Bathrooms:</h3>
-            <button type="button" class="bedButton" onclick="bedSelected(this)">1</button>
-            <h3>Square Feet:</h3>
-            <input type="text" id="squareMin" placeholder="Min">
-            <h3>Repond: </h3>
+            <h3>Full Name:</h3>
+            <input type="text" id="priceMin" placeholder="First name">
+            <input type="text" id="priceMax" placeholder="Last name">
+            <h3>Contact email:</h3>
+            <input type="text" placeholder="example@email.com">
+            <h3>Contact Cellphone:</h3>
+            <input type="text" placeholder="4031234567">
+            <h4>Realator Information:</h4>
+            <h5>John Doe - XYZ Realty</h5>
+            <p>403-123-3215   jDoe@XYZRealty.ca</p>
+            <h3>Message:</h3>
+            <textarea rows="8" cols="50" placeholder="Enter message here"></textarea>
+
+            <h3>Method for response: </h3>
             <div class="checkbox-container">
               <input type="checkbox" id="houseBox">
               <label for="checkbox1">email</label>
               <input type="checkbox" id="houseBox">
               <label for="checkbox1">SMS</label>
-              <input type="checkbox" id="houseBox">
-              <label for="checkbox1">both</label>
             </div>
-
-            <p>Number of Results: <span id="resultCount">8</span></p>
             <a>
             <img src="/close.png" alt="Clickable-PNG" class="close" onclick="closeFilter()">
             </a>
-            <!-- <button type="button" class="close" onclick="closeFilter()">Close</button> -->
-            <button type="button" class="reset" onclick="reset()">cancel</button>
-            <button type="button" class="apply" id="apply" onclick="changeListings()">send</button>
-            </div>
-
+            <button type="button" class="sent" id="sent" onclick="sent()">Send</button>
+        </div>
+        <div class ="confirmation" id="confirm">
+            <h3>Are you sure you want to send? </h3>
+            <button type="button" class="no" id="no" onclick="no()">NO</button>
+            <button type="button" class="yes" id="yes" onclick="yes()">YES</button>
+        </div>
+        <div class ="confirmed" id="confirmed">
+            <h1>Your message has been sent!</h1>
+            <p>Realator will respond to your selected method of response (SMS and/or email)</p>
+            <a>
+                <img src="/close.png" alt="Clickable-PNG" class="close" onclick="closeConfirmed()">
+            </a>
+        </div>
         <hr class="line">
         <ul class="detsList">
             <li>Entire home
