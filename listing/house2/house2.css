@@ -368,3 +368,28 @@ footer {
    button:hover {
     background-color: rgb(212, 85, 0);
   }
+
+  .filter-button{
+	width: 90px;
+	padding: 10px 0;
+	background:  rgb(226, 100, 10);
+	color: white;
+	border: 0;
+	font-size: 18px;
+	border-radius: 50px;
+	cursor: pointer;
+  }
+  .avgDeal {
+	margin: 2px;
+	margin-left: 10px;
+	font-size: 15px;
+	border-radius: 8px;
+	background-color: rgb(231, 161, 20);
+	color: white;
+	width: 75px;
+	padding: 2px;
+  }
+  .houseTitle span{
+	font-size: 20px;
+	font-weight: 300;
+  }
