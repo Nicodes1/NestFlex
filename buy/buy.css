@@ -5,7 +5,8 @@ html, body {
   height: 100%; /* Ensure that the body takes up the full height of the viewport */
   display: flex;
   flex-direction: column;
-  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;;
+
 }
 .header{
   position: fixed;

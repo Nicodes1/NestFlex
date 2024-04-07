@@ -5,6 +5,7 @@ html, body {
 	height: 100%; /* Ensure that the body takes up the full height of the viewport */
 	display: flex;
 	flex-direction: column;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;;
 	
 	}
 	.header{
@@ -107,23 +108,42 @@ margin-bottom: 20px;
     align-items: center;
     margin: 10px 0;
 }
+/* --------------------------house gallery---------------- */
 
-.houseGallery{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-areas: 'first first . .' 'first first . .';
-    margin: 20px 0;
-}
-
-.houseGallery div img{
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-}
-
-.mainGall{
-    grid-area: first;
-}
+  
+/* --------------------------house photos---------------- */
+/* Style house gallery */
+.houseGallery {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px; /* Add padding around the gallery */
+  }
+  
+  /* Style main gallery image */
+  .mainGall {
+	flex: 0 0 54%; /* Take up 40% of the width */
+  }
+  
+  .mainGall img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px; /* Apply rounded corners */
+  }
+  
+  /* Style small gallery images */
+  .smallPhotos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Three columns for small photos */
+	gap: 5px; /* Gap between images */
+  }
+  
+  .smallGall img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 10px; /* Apply rounded corners */
+  }
 
 .dets h2{
     font-weight: 500;
@@ -132,3 +152,82 @@ margin-bottom: 20px;
     text-align: right;
     font-size: 22px;
 }
+
+.line{
+	border:0;
+	height: 1px;
+	background-color: #ccc;
+	width: 100%;
+	max-width: 800px;
+	margin: 20px 0 50px;
+
+}
+
+.detsList {
+	list-style: none;
+	margin: 50px 0;
+}
+.detsList li{
+	margin-left: 50px;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #555;
+}
+.detsList li span{
+	display: block;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.descript{
+	max-width: 700px;
+	margin-bottom: 50px;
+}
+
+.map{
+	margin: 50px 0;
+}
+
+.map iframe{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.map h2{
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.contact{
+	display: inline-block;
+	margin: 40px 0 40px 120px;
+	color: green;
+	padding: 15px 50px;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+footer {
+	background-color: rgb(255, 255, 255);
+  }
+  .footer-container {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	border-top: 3px solid rgba(254, 97, 35, 0.911);
+  }
+  .footer-desc {
+	color: rgba(254, 97, 35, 0.911);
+	text-align: center;
+  }
+  .footer-desc h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  #viewMore{
+	float: right;
+	margin-right: 25px;
+  }
