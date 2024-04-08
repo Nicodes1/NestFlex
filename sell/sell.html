@@ -1,25 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sell Page</title>
-    <link rel="stylesheet" href="sell.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Page</title>
+  <link rel="stylesheet" href="sell.css">
 </head>
+
 <body>
-    <nav class="navBar">
-        <ul>
-          <a href="/home/home.html">
-            <img src="/logo2.png" alt="Clickable PNG" class="logo2">
-          </a>
-          <button class ="buyButton" type="button"><a href="/buy//buy.html">BUY</a></button>
-          <button class="sellButton" type="button"><a href="/sell/sell.html">SELL</a></button>
-          <button class="helpButton" type="button"><a href="/help/help.html">HELP</a></button>
-          <a href="/profile/profile.html">
-            <img src="/profile-icon.png" alt="Clickable-PNG" class="profile">
-          </a>
-        </ul>
-      </nav>
+  <nav class="navBar">
+    <ul>
+      <a href="/home/home.html">
+        <img src="/logo2.png" alt="Clickable PNG" class="logo2">
+      </a>
+      <button class="buyButton" type="button"><a href="/buy//buy.html">BUY</a></button>
+      <button class="sellButton" type="button"><a href="/sell/sell.html">SELL</a></button>
+      <button class="helpButton" type="button"><a href="/help/help.html">HELP</a></button>
+      <a href="/profile/profile.html">
+        <img src="/profile-icon.png" alt="Clickable-PNG" class="profile">
+      </a>
+    </ul>
+  </nav>
+
+  <div class="pictures">
+
+    <div class="pic">
+      <label for="fileInput">
+        <img id="imagePreview" src="/addPhotos.png" alt="Upload Image">
+      </label>
+      <input type="file" id="fileInput" style="display: none;">
+    </div>
+
+    <div>
+      <img src="/photoPreview.png" class="galleryPic" style="margin-left: 10%;">
+      <img src="/photoPreview.png" class="galleryPic">
+    </div>
+
+    <div>
+      <img src="/photoPreview.png" class="galleryPic" style="margin-left: 10%;">
+      <img src="/photoPreview.png" class="galleryPic">
+    </div>
+
+  </div>
+
+  <div class="listingInfo">
+    <h1>PROPERTY DETAILS</h1>
+
+    <div class="textInputs">
+      <h1>Street Address</h1>
+      <input type="text" class="input-bar">
+    </div>
+
+    <div class="textInputs">
+      <h1>City, Province, Country</h1>
+      <input type="text" class="input-bar">
+    </div>
+
+    <div class="miniInputs">
+      <h1 class="inline-heading">Listing Price</h1>
+      <input type="text" class="input-bar">
+    </div>
+
+    <div class="dropdown">
+      <h1 class="inline-heading">Bedrooms</h1>
+      <select>
+        <option value="" disabled selected></option>
+        <option value="option1"> 1</option>
+        <option value="option2">2</option>
+        <option value="option3">3</option>
+        <option value="option3">4</option>
+        <option value="option3">5+</option>
+      </select>
+    </div>
+
+    <div class="dropdown">
+      <h1 class="inline-heading">Bathrooms</h1>
+      <select>
+        <option value="" disabled selected></option>
+        <option value="option1"> 1</option>
+        <option value="option2">2</option>
+        <option value="option3">3</option>
+        <option value="option3">4</option>
+        <option value="option3">5+</option>
+      </select>
+    </div>
+
+    <div class="miniInputs">
+      <h1 class="inline-heading">SQFT</h1>
+      <input type="text" class="input-bar">
+    </div>
+
+    <div class="dropdown">
+      <h1 class="inline-heading">Type</h1>
+      <select>
+        <option value="" disabled selected></option>
+        <option value="option1">House</option>
+        <option value="option2">Townhome</option>
+        <option value="option3">Condo</option>
+        <option value="option3">Duplex</option>
+        <option value="option3">Apartment</option>
+        <option value="option3">Acreage</option>
+      </select>
+    </div>
+
+    <div>
+      <textarea name="desc" id="desc" cols="30" rows="10" class="input-desc"
+        placeholder="Enter property desciption here:"></textarea>
+    </div>
+
+    <div style="margin-top: 2%;">
+      <button type="button" class="apply" id="apply" onclick="changeListings()"
+        style="margin-right: 7%;">Preview</button>
+      <button type="button" class="apply" onclick="savedFilter()" style="border: 5px solid black;">Post</button>
+    </div>
+
+
+  </div>
 </body>
+
 </html>

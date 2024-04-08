@@ -1,88 +1,259 @@
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .logo2 {
-    width: 175px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    top: 10px; /* Adjust the distance from the top */
-    left: 50px; /* Adjust the distance from the left */
-  }
-  
-  .navBar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    border-bottom: 20ch;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
-    z-index: 1000;
-  }
-  .buyButton{
-    font-size: 20px;
-    font-weight: bold;
-    background-color: white;
-    color: rgb(255, 81, 0); /* Change to desired color */
-    border: none;
-    outline: none;
-    position: fixed;
-    top: 43px; /* Adjust the distance from the top */
-    right: 350px; /* Adjust the distance from the left */
-    padding: 10px 20px; /* Adjust padding as needed */
-    border-radius: 5px; /* Optional: Add rounded corners */
-  }
-  .sellButton{
-    font-size: 20px;
-    font-weight: bold;
-    background-color:rgba(255, 171, 115, 0.323);
-    color: rgb(255, 81, 0); /* Change to desired color */
-    border: none;
-    outline: none;
-    position: fixed;
-    top: 43px;; /* Adjust the distance from the top */
-    right: 250px; /* Adjust the distance from the left */
-    padding: 10px 20px; /* Adjust padding as needed */
-    border-radius: 5px; /* Optional: Add rounded corners */
-  }
-  .helpButton{
-    font-size: 20px;
-    font-weight: bold;
-    background-color: white;
-    color: rgb(255, 81, 0); /* Change to desired color */
-    border: none;
-    outline: none;
-    position: fixed;
-    top: 43px;; /* Adjust the distance from the top */
-    right: 150px; /* Adjust the distance from the left */
-    padding: 10px 20px; /* Adjust padding as needed */
-    border-radius: 5px; /* Optional: Add rounded corners */
-  }
-  .profile{
-    width:50px;
-    height: auto;
-    position: fixed;
-    top: 32px; 
-    right: 50px;
-    padding: 5px 5px; 
-    border-radius: 100px; 
-  }
-  
-  .sellButton a, .buyButton a, .helpButton a {
-    color: inherit; /* Inherit color from parent element (orange) */
-    text-decoration: none; /* Remove underline from the link */
-  }
-  
-  .profile:hover {
-    width: 50px;
-    background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
-    border-radius: 1000px;
-  }
-  .buyButton:hover, .sellButton:hover, .helpButton:hover {
-    background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
-  }
-  
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo2 {
+  width: 175px;
+  /* Adjust the width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  top: 10px;
+  /* Adjust the distance from the top */
+  left: 50px;
+  /* Adjust the distance from the left */
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border-bottom: 20ch;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.buyButton {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  color: rgb(255, 81, 0);
+  /* Change to desired color */
+  border: none;
+  outline: none;
+  position: fixed;
+  top: 43px;
+  /* Adjust the distance from the top */
+  right: 350px;
+  /* Adjust the distance from the left */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border-radius: 5px;
+  /* Optional: Add rounded corners */
+}
+
+.sellButton {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 171, 115, 0.323);
+  color: rgb(255, 81, 0);
+  /* Change to desired color */
+  border: none;
+  outline: none;
+  position: fixed;
+  top: 43px;
+  ;
+  /* Adjust the distance from the top */
+  right: 250px;
+  /* Adjust the distance from the left */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border-radius: 5px;
+  /* Optional: Add rounded corners */
+}
+
+.helpButton {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  color: rgb(255, 81, 0);
+  /* Change to desired color */
+  border: none;
+  outline: none;
+  position: fixed;
+  top: 43px;
+  ;
+  /* Adjust the distance from the top */
+  right: 150px;
+  /* Adjust the distance from the left */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border-radius: 5px;
+  /* Optional: Add rounded corners */
+}
+
+.profile {
+  width: 50px;
+  height: auto;
+  position: fixed;
+  top: 32px;
+  right: 50px;
+  padding: 5px 5px;
+  border-radius: 100px;
+}
+
+.sellButton a,
+.buyButton a,
+.helpButton a {
+  color: inherit;
+  /* Inherit color from parent element (orange) */
+  text-decoration: none;
+  /* Remove underline from the link */
+}
+
+.profile:hover {
+  width: 50px;
+  background-color: rgba(255, 171, 115, 0.323);
+  /* Change this to the desired hover color */
+  border-radius: 1000px;
+}
+
+.buyButton:hover,
+.sellButton:hover,
+.helpButton:hover {
+  background-color: rgba(255, 171, 115, 0.323);
+  /* Change this to the desired hover color */
+}
+
+/* Pictures */
+
+.pictures {
+  top: 110px;
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  left: 0px;
+}
+
+.pic {
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.galleryPic {
+  margin-right: 1%;
+  margin-top: 2%;
+}
+
+
+/* Listing info */
+
+.listingInfo {
+  top: 110px;
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+}
+
+h1 {
+  color: #FF5800;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.textInputs h1 {
+  color: black;
+  text-align: left;
+  position: relative;
+  font-size: 24px;
+}
+
+.input-bar {
+  padding: 10px;
+  width: 85%;
+  height: 25px;
+  border: 3px solid #FF5800;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.miniInputs {
+  height: auto;
+  width: 80%;
+  margin-top: 2%;
+}
+
+.miniInputs h1 {
+  color: black;
+  text-align: left;
+  position: relative;
+  font-size: 24px;
+}
+
+.inline-heading {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the margin between the heading and input */
+}
+
+.miniInputs .input-bar {
+  width: 20%;
+}
+
+.dropdown {
+  font-size: 24px;
+  min-width: 250px;
+  max-width: 50%;
+  margin-top: 2%;
+  display: inline-block;
+}
+
+/* Styles for the select element */
+.dropdown select {
+  position: relative;
+  width: 30%;
+  padding: 10px;
+  border: 3px solid #FF5800;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Styles for the options */
+.dropdown select option {
+  padding: 10px;
+}
+
+.dropdown h1 {
+  color: black;
+  text-align: left;
+  position: relative;
+  font-size: 24px;
+}
+
+.input-desc {
+  margin-top: 2%;
+  padding: 10px;
+  width: 85%;
+  height: 25%;
+  border: 3px solid #FF5800;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 24px;
+  margin-bottom: 5px;
+  overflow-wrap: break-word;
+  vertical-align: top; /* Aligns text to the top */
+  direction: ltr; /* Ensures text direction is left-to-right */
+}
+
+button.apply {
+  width: 40%;
+  padding: 5px 0;
+  background:  rgba(255, 171, 115, 0.323);;
+  color: black;
+  font-weight: bold;
+  border: 0;
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
