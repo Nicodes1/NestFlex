@@ -98,6 +98,7 @@ body {
   padding: 5px 5px;
   border-radius: 100px;
 }
+
 /* Please work */
 
 .sellButton a,
@@ -135,13 +136,40 @@ body {
 }
 
 .pic {
-  margin-left: 10%;
-  margin-top: 2%;
+  width: 100%;
+  /* Take full width of the viewport */
+  max-width: 100%;
+  /* Ensure the image doesn't exceed its original size */
+  height: auto;
+  /* Maintain aspect ratio */
+  text-align: center;
+  /* Center the image horizontally */
+}
+
+.galPic {
+  width: 100%;
+  /* Take full width of the viewport */
+  max-width: 100%;
+  /* Ensure the image doesn't exceed its original size */
+  height: auto;
+  /* Maintain aspect ratio */
+  text-align: center;
+  /* Center the image horizontally */
+  display: flex; /* Use flexbox */
+            justify-content: center; /* Center the images horizontally */
+            align-items: center; /* Center the images vertically */
+}
+
+.pic img {
+  max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .galleryPic {
   margin-right: 1%;
   margin-top: 2%;
+  max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  height: auto; /* Maintain aspect ratio */
 }
 
 
@@ -194,7 +222,8 @@ h1 {
 
 .inline-heading {
   display: inline-block;
-  margin-right: 10px; /* Adjust the margin between the heading and input */
+  margin-right: 10px;
+  /* Adjust the margin between the heading and input */
 }
 
 .miniInputs .input-bar {
@@ -244,14 +273,17 @@ h1 {
   font-size: 24px;
   margin-bottom: 5px;
   overflow-wrap: break-word;
-  vertical-align: top; /* Aligns text to the top */
-  direction: ltr; /* Ensures text direction is left-to-right */
+  vertical-align: top;
+  /* Aligns text to the top */
+  direction: ltr;
+  /* Ensures text direction is left-to-right */
 }
 
 button.apply {
   width: 40%;
   padding: 5px 0;
-  background:  rgba(255, 171, 115, 0.323);;
+  background: rgba(255, 171, 115, 0.323);
+  ;
   color: black;
   font-weight: bold;
   border: 0;
