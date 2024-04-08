@@ -1,6 +1,6 @@
 NestFlex README
 
-CPSC 481 Tutorial 05 Group 6
+CPSC 481 W24 Tutorial 05 Group 6
 
 Matthew Martin (matthew.martin1@ucalgary.ca)
 Luke Nodwell (luke.nodwell@ucalgary.ca)
