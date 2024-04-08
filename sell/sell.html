@@ -24,6 +24,21 @@
     </ul>
   </nav>
 
+  <div class="postPop" id="post">
+    <a>
+      <img src="/close.png" alt="Clickable-PNG" class="close" onclick="closePosted()">
+    </a>
+    <a href="/home/home.html">
+      <img src="/logo2.png" alt="Clickable PNG" class="logo2">
+    </a>
+    <h1 style="margin-top: 30%;">LISTING SUCCESSFULLY POSTED!</h1>
+
+    <div style="margin-top: 45%;">
+      <button type="button" class="apply" style="margin-right: 7%; border: 5px solid black;"><a href="/home/home.html">Home</a></button>
+      <button type="button" class="apply" style="margin-right: 7%;"><a href="/preview/preview.html">View Ad</a></button>
+    </div>
+  </div>
+
   <div class="pictures">
 
     <div class="pic">
@@ -112,11 +127,12 @@
 
     <div style="margin-top: 2%;">
       <button type="button" class="apply" style="margin-right: 7%;"><a href="/preview/preview.html">Preview</a></button>
-      <button type="button" class="apply" onclick="savedFilter()" style="border: 5px solid black;">Post</button>
+      <button type="button" class="apply" onclick="openPosted()" style="border: 5px solid black;">Post</button>
     </div>
 
 
   </div>
+  <script src="sell.js"></script>
 </body>
 
 </html>
