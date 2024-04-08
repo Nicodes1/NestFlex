@@ -229,6 +229,8 @@ html, body {
   font-weight: 300;
 }
 
+
+
 .filterPop {
   width: 50%;
   height: 70%;
@@ -342,9 +344,4 @@ button.bedButton:hover{
 }
 .hide{
   display: none;
-}
-
-.emptyheart{
-  width: 40px;
-  height: auto;
 }

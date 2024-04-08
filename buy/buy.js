@@ -14,11 +14,22 @@ function changeListings(){
     }
 }
 
-function bedSelected(bedButton){
-    bedButton.classList.add('clicked')
-    let spanElement = document.getElementById('resultCount');
-        spanElement.textContent = '4';
+function bedSelected(bedButton) {
+    if (bedButton.classList.contains('clicked')) {
+            // Button is already clicked, so unclick it
+            bedButton.classList.remove('clicked');
+            // Reset the result count or perform any other desired action
+            let spanElement = document.getElementById('resultCount');
+            spanElement.textContent = ''; // Resetting the result count
+    } else {
+            // Button is not clicked, so click it
+            bedButton.classList.add('clicked');
+            // Set the result count or perform any other desired action
+            let spanElement = document.getElementById('resultCount');
+            spanElement.textContent = '4'; // Setting the result count
+    }
 }
+
 let buttons = document.getElementsByClassName('bedButton');
 function reset() {
     for (let i = 0; i < buttons.length; i++) {
@@ -62,6 +73,7 @@ function savedFilter(){
     var buttonToBeClicked = document.getElementById("houseBox");
     buttonToBeClicked.click();
 }
+
 
 
 
