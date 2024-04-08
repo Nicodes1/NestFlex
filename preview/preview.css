@@ -1,0 +1,408 @@
+html, body {
+	padding-top: 110px;
+	margin: 0;
+	padding: 0;
+	height: 100%; /* Ensure that the body takes up the full height of the viewport */
+	display: flex;
+	flex-direction: column;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;;
+	
+	}
+	.header{
+	position: fixed;
+	z-index:9999;
+	top:0;
+	}
+
+	.logo2 {
+		width: 175px; 
+		height: auto; 
+		top: 10px; 
+		left: 50px; 
+	}
+	.navBar{
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: rgb(255, 255, 255);
+		display: flex;
+		border-bottom: 20ch;
+		border-radius: 20px;
+		box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+		z-index: 1000;
+	}
+
+	.navbar, .buyButton{
+		font-size: 20px;
+		font-weight: bold;
+		background-color: white;
+		color: rgb(255, 81, 0); /* Change to desired color */
+		border: none;
+		outline: none;
+		position: fixed;
+		top: 43px; /* Adjust the distance from the top */
+		right: 350px; /* Adjust the distance from the left */
+		padding: 10px 20px; /* Adjust padding as needed */
+		border-radius: 5px; /* Optional: Add rounded corners */
+	}
+	.navbar, .sellButton{
+		font-size: 20px;
+		font-weight: bold;
+		background-color: rgba(255, 171, 115, 0.323);
+		color: rgb(255, 81, 0); /* Change to desired color */
+		border: none;
+		outline: none;
+		position: fixed;
+		top: 43px;; /* Adjust the distance from the top */
+		right: 250px; /* Adjust the distance from the left */
+		padding: 10px 20px; /* Adjust padding as needed */
+		border-radius: 5px; /* Optional: Add rounded corners */
+	}
+	.navbar, .helpButton{
+		font-size: 20px;
+		font-weight: bold;
+		background-color: white;
+		color: rgb(255, 81, 0); /* Change to desired color */
+		border: none;
+		outline: none;
+		position: fixed;
+		top: 43px;; /* Adjust the distance from the top */
+		right: 150px; /* Adjust the distance from the left */
+		padding: 10px 20px; /* Adjust padding as needed */
+		border-radius: 5px; /* Optional: Add rounded corners */
+	}
+	.navbar, .profile{
+		width:50px;
+		height: auto;
+		position: fixed;
+		top: 32px; 
+		right: 50px;
+		padding: 5px 5px; 
+		border-radius: 100px; 
+	}
+  
+	.sellButton a, .buyButton a, .helpButton a, .search-button a, .apply a{
+		color: inherit; /* Inherit color from parent element (orange) */
+		text-decoration: none; /* Remove underline from the link */
+	}
+
+	.buyButton:hover, .sellButton:hover, .helpButton:hover, .profile:hover {
+		background-color: rgba(255, 171, 115, 0.323); /* Change this to the desired hover color */
+	}
+
+/* --------house details  */
+.houseDetails{
+    margin-top: 120px;
+    padding:0 12%
+}
+.houseTitle{
+margin-bottom: 20px;
+}
+.houseTitle h1{
+    font-weight: 600;
+}
+
+.houseTitle .row{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+/* --------------------------house gallery---------------- */
+
+  
+/* --------------------------house photos---------------- */
+/* Style house gallery */
+.houseGallery {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px; /* Add padding around the gallery */
+  }
+  
+  /* Style main gallery image */
+  .mainGall {
+	flex: 0 0 54%; /* Take up 40% of the width */
+  }
+  
+  .mainGall img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px; /* Apply rounded corners */
+  }
+  
+  /* Style small gallery images */
+  .smallPhotos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Three columns for small photos */
+	gap: 5px; /* Gap between images */
+  }
+  
+  .smallGall img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 10px; /* Apply rounded corners */
+  }
+
+.dets h2{
+    font-weight: 500;
+}
+.dets h4{
+    text-align: right;
+    font-size: 22px;
+}
+
+.line{
+	border:0;
+	height: 1px;
+	background-color: #ccc;
+	width: 100%;
+	max-width: 800px;
+	margin: 20px 0 50px;
+
+}
+
+.detsList {
+	list-style: none;
+	margin: 50px 0;
+}
+.detsList li{
+	margin-left: 50px;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #555;
+}
+.detsList li span{
+	display: block;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.descript{
+	max-width: 700px;
+	margin-bottom: 50px;
+	margin-right: 35%;
+}
+
+.map{
+	margin: 50px 0;
+}
+
+.map iframe{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.map h2{
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.contact{
+	display: inline-block;
+	margin: 40px 0 40px 120px;
+	color: green;
+	padding: 15px 50px;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+footer {
+	background-color: rgb(255, 255, 255);
+  }
+  .footer-container {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	border-top: 3px solid rgba(254, 97, 35, 0.911);
+  }
+  .footer-desc {
+	color: rgba(254, 97, 35, 0.911);
+	text-align: center;
+  }
+  .footer-desc h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  #viewMore{
+	float: right;
+	margin-right: 25px;
+  }
+/* --------------------Contact PopUp----------- */
+.filterPop {
+	width: 30%;
+	height: 60%;
+	background-color: rgba(255, 233, 219, 0.916);
+	border-radius: 8px;
+	position: fixed;
+	top: 50%; /* Adjust as needed */
+	left: 80%;
+	outline: 2px solid rgb(183, 90, 32);
+	transform: translate(-50%, -50%) scale(0.1);
+	text-align: center;
+	padding: 0 30px 30px;
+	color: rgb(56, 56, 56);
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+	z-index: 9999;
+	overflow-y: auto;
+  }
+  .open-popup{
+	visibility: visible;
+	top: 50%;
+	transform: translate(-50%,-50%) scale(1);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+  }
+  .filterPop h2{
+	font-size: 25px;
+	align-content: center;
+	font-weight: 200;
+	margin: 10px 0px 10px;
+  } 
+  .filterPop button{
+	width: 80px;
+	padding: 5px 0;
+	background:  rgb(255, 102, 0);
+	color: white;
+	border: 0;
+	font-size: 15px;
+	border-radius: 50px;
+	cursor: pointer;
+  }
+  .filterPop .close {
+	width: 40px;
+	height: auto;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+  }
+
+  .confirmation {
+	width: 20%;
+	height: 15%;
+	background-color: rgb(255, 255, 255);
+	border-radius: 8px;
+	position: fixed;
+	top: 50%; /* Adjust as needed */
+	left: 80%;
+	outline: 2px solid rgb(183, 90, 32);
+	transform: translate(-50%, -50%) scale(0.1);
+	text-align: center;
+	padding: 0 30px 30px;
+	color: rgb(56, 56, 56);
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+	z-index: 9999;
+	overflow-y: auto;
+  }
+
+  .open-confirm{
+	visibility: visible;
+	top: 50%;
+	transform: translate(-50%,-50%) scale(1);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+  }
+
+  .confirmed {
+	width: 30%;
+	height: 30%;
+	background-color: rgb(255, 255, 255);
+	border-radius: 8px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	outline: 2px solid rgb(183, 90, 32);
+	transform: translate(-50%, -50%) scale(0.1);
+	text-align: center;
+	padding: 40px 20px 20px;
+	color: rgb(56, 56, 56);
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+	z-index: 9999;
+	overflow-y: auto;
+  }
+
+  .open-confirmed{
+	visibility: visible;
+	top: 50%;
+	transform: translate(-50%,-50%) scale(1);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+  }
+
+  .confirmed .close {
+	width: 40px;
+	height: auto;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+  }
+
+  .yes{
+	width: 80px;
+	padding: 5px 0;
+	background:  rgb(255, 102, 0);
+	color: white;
+	border: 0;
+	font-size: 15px;
+	border-radius: 50px;
+	cursor: pointer;
+  }
+
+  .no{
+	width: 80px;
+	padding: 5px 0;
+	background:  rgb(255, 102, 0);
+	color: white;
+	border: 0;
+	font-size: 15px;
+	border-radius: 50px;
+	cursor: pointer;
+  }
+
+   button:hover {
+    background-color: rgb(212, 85, 0);
+  }
+
+  .filter-button{
+	width: 90px;
+	padding: 10px 0;
+	background:  rgb(226, 100, 10);
+	color: white;
+	border: 0;
+	font-size: 18px;
+	border-radius: 50px;
+	cursor: pointer;
+  }
+  .avgDeal {
+	margin: 2px;
+	margin-left: 10px;
+	font-size: 15px;
+	border-radius: 8px;
+	background-color: rgb(231, 161, 20);
+	color: white;
+	width: 75px;
+	padding: 2px;
+  }
+  .houseTitle span{
+	font-size: 20px;
+	font-weight: 300;
+  }
+
+  button.apply {
+	width: 175px;
+	padding: 5px 0;
+	background:  rgba(255, 171, 115, 0.323);;
+	color: black;
+	font-weight: bold;
+	border: 0;
+	font-size: 30px;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-top: 2%;
+      }

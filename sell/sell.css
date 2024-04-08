@@ -101,7 +101,8 @@ body {
 
 .sellButton a,
 .buyButton a,
-.helpButton a {
+.helpButton a,
+.apply a {
   color: inherit;
   /* Inherit color from parent element (orange) */
   text-decoration: none;
