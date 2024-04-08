@@ -28,11 +28,18 @@ function closeConfirmed(){
 }
 
 function toggleHeart() {
-    var hiddenElement = document.getElementById("filledheart"); // Get the hidden element
+    var hiddenElement = document.getElementById("filledheart");
+    var hideElement = document.getElementById("emptyheart");
 
-  if (hiddenElement.style.display === "none") {
-    hiddenElement.style.display = "block"; // Make it visible
-  } else {
-    hiddenElement.style.display = "none"; // Hide it
+    if (hideElement.style.display === "block") {
+        hideElement.style.display = "none";
+    } else {
+        hideElement.style.display = "block";
+  }
+
+    if (hiddenElement.style.display === "none") {
+        hiddenElement.style.display = "block";
+    } else {
+        hiddenElement.style.display = "none";
   }
   }

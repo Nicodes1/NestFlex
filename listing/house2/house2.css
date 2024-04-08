@@ -394,14 +394,14 @@ footer {
 	font-weight: 300;
   }
 
-  .emptyheart{
+  #emptyheart{
 	width: 40px;
 	height: auto;
 	position: absolute;
 	right: 300px;
 	cursor: pointer;
   }
-  .filledheart{
+  #filledheart{
 	width: 48px;
 	height: auto;
 	position: absolute;
