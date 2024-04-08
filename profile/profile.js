@@ -12,14 +12,27 @@ function bedSelected(bedButton) {
         if (bedButton.classList.contains('clicked')) {
                 // Button is already clicked, so unclick it
                 bedButton.classList.remove('clicked');
-                // Reset the result count or perform any other desired action
-                let spanElement = document.getElementById('resultCount');
-                spanElement.textContent = ''; // Resetting the result count
         } else {
                 // Button is not clicked, so click it
                 bedButton.classList.add('clicked');
-                // Set the result count or perform any other desired action
-                let spanElement = document.getElementById('resultCount');
-                spanElement.textContent = '4'; // Setting the result count
         }
+}
+
+
+var active2 = document.getElementById("active2");
+
+function delete0() {
+        var listing = document.getElementById("listing0");
+        listing.classList.add("hide");
+
+        var button = document.getElementById("dButton0");
+        button.classList.add('hide');
+}
+
+function delete1() {
+        var listing = document.getElementById("listing1");
+        listing.classList.toggle("hide");
+
+        var button = document.getElementById("dButton1");
+        button.classList.add('hide');
 }

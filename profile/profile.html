@@ -108,18 +108,18 @@
       <!-- First Listing -->
       <a href="/listing/house1/house1.html">
         <div class="hideable">
-         <div class="house"> 
-            <div class = "house-img">
+          <div class="house">
+            <div class="house-img">
               <img src="/pics/house1/home1.jpeg">
             </div>
-            <div class = "house-info">
+            <div class="house-info">
               <div class="house-price">
                 <link href='https://unpkg.com/css.gg@2.0.0/icons/css/heart.css' rel='stylesheet'>
                 <h4><span>CAD</span> 240,000<span class="goodDeal">Good Deal</span></h4>
               </div>
               <h3>Seton SE Calgary</h3>
-              <p>2 bedroom/2 bathroom/1234 sqft</p>  
-              <p>House</p>       
+              <p>2 bedroom/2 bathroom/1234 sqft</p>
+              <p>House</p>
             </div>
           </div>
         </div>
@@ -127,60 +127,66 @@
       <!-- Second Listing -->
       <a href="/listing/house2/house2.html">
         <div class="house">
-          <div class = "house-img">
+          <div class="house-img">
             <img src="/pics/house2/house2main.jpeg">
           </div>
-          <div class = "house-info">
+          <div class="house-info">
             <div class="house-price">
               <h4><span>CAD</span> 1,000,000<span class="avgDeal">Average Deal</span></h4>
             </div>
             <p>Altadore NW Calgary</p>
             <p>3 bedroom/4 bathroom/2000 sqft</p>
-            <p>House</p>    
+            <p>House</p>
           </div>
         </div>
-        </a>
+      </a>
     </div>
 
-    
+
 
     <h1>ACTIVE LISTINGS</h1>
     <div class="listings">
       <!-- First Listing -->
       <a href="/listing/house1/house1.html">
-        <div class="hideable">
-         <div class="house"> 
-            <div class = "house-img">
+        <div id="listing0">
+          <div class="house">
+            <div class="house-img">
               <img src="/pics/house1/home1.jpeg">
             </div>
-            <div class = "house-info">
+            <div class="house-info">
               <div class="house-price">
                 <link href='https://unpkg.com/css.gg@2.0.0/icons/css/heart.css' rel='stylesheet'>
                 <h4><span>CAD</span> 240,000<span class="goodDeal">Good Deal</span></h4>
               </div>
               <h3>Seton SE Calgary</h3>
-              <p>2 bedroom/2 bathroom/1234 sqft</p>  
-              <p>House</p>       
+              <p>2 bedroom/2 bathroom/1234 sqft</p>
+              <p>House</p>
             </div>
           </div>
         </div>
       </a>
+      <button type="button" class="apply" id="dButton0" onclick="delete0()">Delete Posting</button>
       <!-- Second Listing -->
-      <a href="/listing/house2/house2.html">
-        <div class="house">
-          <div class = "house-img">
-            <img src="/pics/house2/house2main.jpeg">
-          </div>
-          <div class = "house-info">
-            <div class="house-price">
-              <h4><span>CAD</span> 1,000,000<span class="avgDeal">Average Deal</span></h4>
+      <div id="active2">
+        <a href="/listing/house2/house2.html">
+          <div id="listing1">
+            <div class="house">
+              <div class="house-img">
+                <img src="/pics/previewHouse/main.jpg">
+              </div>
+              <div class="house-info">
+                <div class="house-price">
+                  <h4><span>CAD</span> 1,200,000<span class="avgDeal">Average Deal</span></h4>
+                </div>
+                <p>Wildwood SW Calgary</p>
+                <p>3 bedroom/4 bathroom/2000 sqft</p>
+                <p>House</p>
+              </div>
             </div>
-            <p>Altadore NW Calgary</p>
-            <p>3 bedroom/4 bathroom/2000 sqft</p>
-            <p>House</p>    
           </div>
-        </div>
         </a>
+        <button type="button" class="apply" id="dButton1"onclick="delete1()">Delete Posting</button>
+      </div>
     </div>
   </div>
   <script src="profile.js"></script>
