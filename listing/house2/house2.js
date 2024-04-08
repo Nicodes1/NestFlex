@@ -26,3 +26,13 @@ function closeConfirmed(){
     let confirmed = document.getElementById("confirmed");
     confirmed.classList.remove("open-confirmed")
 }
+
+function toggleHeart() {
+    var hiddenElement = document.getElementById("filledheart"); // Get the hidden element
+
+  if (hiddenElement.style.display === "none") {
+    hiddenElement.style.display = "block"; // Make it visible
+  } else {
+    hiddenElement.style.display = "none"; // Hide it
+  }
+  }

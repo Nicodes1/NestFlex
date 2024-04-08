@@ -343,3 +343,8 @@ button.bedButton:hover{
 .hide{
   display: none;
 }
+
+.emptyheart{
+  width: 40px;
+  height: auto;
+}
