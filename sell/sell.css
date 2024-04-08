@@ -98,7 +98,6 @@ body {
   padding: 5px 5px;
   border-radius: 100px;
 }
-/* Please work */
 
 .sellButton a,
 .buyButton a,
@@ -130,7 +129,7 @@ body {
   top: 110px;
   width: 50%;
   position: absolute;
-  height: auto;
+  height: 100%;
   left: 0px;
 }
 
@@ -150,7 +149,7 @@ body {
 .listingInfo {
   top: 110px;
   width: 50%;
-  height: auto;
+  height: 100%;
   left: 50%;
   position: absolute;
 }
@@ -267,7 +266,7 @@ button.apply {
   height: 60%;
   background-color: white;
   border-radius: 8px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   outline: 2px solid rgb(183, 90, 32);
